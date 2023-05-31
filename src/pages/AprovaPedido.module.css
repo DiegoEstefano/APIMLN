@@ -73,7 +73,7 @@
 }
 
 .container button:hover {
-    transition: ;
+    transition: ease-in-out 0.3s;
     color: #ff6624;
     border-color: #ff6624;
     transition: ease-in-out 0.3s;
