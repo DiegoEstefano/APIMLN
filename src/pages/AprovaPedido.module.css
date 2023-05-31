@@ -1,0 +1,80 @@
+.container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.container h1 {
+    margin-bottom: 1.5rem;
+    color: white;
+}
+
+.container form {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.container section {
+    margin-top: 0.8rem;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.container section span a svg {
+    fill: white;
+}
+
+.container section span a:hover svg {
+    transition: ease-in-out 0.4s;
+    fill: orange;
+    -webkit-transition: ease-in-out 0.4s;
+    -moz-transition: ease-in-out 0.4s;
+    -ms-transition: ease-in-out 0.4s;
+    -o-transition: ease-in-out 0.4s;
+}
+
+.container form textarea {
+    padding: 0.4rem;
+    width: 600px;
+    height: 300px;
+    border: 1px solid rgb(0, 0, 0);
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+
+.container form textarea:focus {
+    box-shadow: 0 0 0 0;
+    border: 0 none;
+    outline: 0;
+}
+
+.container button {
+    cursor: pointer;
+    margin-top: 1rem;
+    padding: 0.3rem 1.2rem;
+    font-size: 1rem;
+    background-color: transparent;
+    border: 1px solid white;
+    color: white;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+
+.container button:hover {
+    transition: ;
+    color: #ff6624;
+    border-color: #ff6624;
+    transition: ease-in-out 0.3s;
+}

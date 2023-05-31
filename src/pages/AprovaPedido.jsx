@@ -1,6 +1,8 @@
 import React from 'react'
 import { NavLink } from 'react-router-dom'
 import { useEffect, useState } from 'react'
+import { BsChevronLeft } from "react-icons/bs";
+import styles from './AprovaPedido.module.css'
 
 import api from '../services/api'
 const user = import.meta.env.VITE_USER
@@ -37,24 +39,23 @@ export default function AprovaPedido() {
     setPedido({ text: '', pedidov: refinaPedido() })
   }
 
-
-
   return (
-    <div>
-      AprovaPedido
+    <div className={styles.container}>
+      <section>
+        <span className={styles.icon}>
+          <NavLink to='/'>  <BsChevronLeft /> </NavLink>
+        </span>
+      </section>
+      <h1> AprovaPedido</h1>
+
       <form onSubmit={handleSubmit}>
         <label>
-          <textarea type="text" name='pesquisa' placeholder='Digite sua busca' onChange={(e) => setPedido({ ...pedido, text: e.target.value })} />
+          <textarea type="text" name='pesquisa' placeholder='Ex: 121233,123124...' onChange={(e) => setPedido({ ...pedido, text: e.target.value })} />
         </label>
         <button type="submit">
-          Procurar
+          Aprovar
         </button>
       </form>
-      <li>
-        <NavLink to='/'>Voltar</NavLink>
-      </li>
     </div>
-
   )
-
 }
