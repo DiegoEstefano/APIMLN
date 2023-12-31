@@ -1,3 +1,3 @@
 # Aprovação de pedidos via api ERP Millennium
-Este sistema utiliza a api de aprovação do millennium, onde eu recebo os pedidos via input e realizo a aprovação via requisição post.
-Para aprovar mais de um basta separar por virgulas.
+This system uses the millennium approval API, where I receive requests via input and carry out approval via post request.
+To approve more than one, simply separate them with commas.
